@@ -3,13 +3,13 @@ pipeline {
     
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials')
-        DOCKER_IMAGE = 'your-dockerhub-username/studentproject'
+        DOCKER_IMAGE = 'aryandemi/djangoapp'
     }
     
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/StudentProject.git'
+                git branch: 'main', url: 'https://github.com/SRCEM-AIM-Class-A/Aryan_Bokde_Django_App.git'
             }
         }
         
