@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal</title>
+    <style>
+        nav { background: #f0f0f0; padding: 10px; }
+        ul { list-style: none; display: flex; gap: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Student Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'academics' %}">Academics</a></li>
+                <li><a href="{% url 'sports' %}">Sports</a></li>
+                <li><a href="{% url 'events' %}">Events</a></li>
+            </ul>
+        </nav>
+        
+        <h2>About Our Portal</h2>
+        <p>This portal provides information about academics, sports, and events at our institution.</p>
+    </div>
+</body>
+</html>
